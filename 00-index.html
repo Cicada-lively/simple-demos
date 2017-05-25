@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>支付网关-首页使用快捷支付</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/newrem.js"></script>
+</head>
+<body style="background-color:#eee;">
+<div class="same-head clearfix">
+    <div class="same-left">
+        <div class="same-return">
+            <img src="images/back-icon.png" alt="">
+        </div>
+    </div>
+    <div class="same-word">
+        订单支付
+    </div>
+</div>
+<div class="wrap clearfix">
+    <ul class="uk-order-list fl pos-rel sameFontSize">
+        <li class="clearfix same-list-row">
+            <div class="fl winPer28"> 订单金额</div>
+            <div class="fl winPer50"> 100.00元</div>
+        </li>
+        <li class="clearfix disNone same-list-row disNone">
+            <div class="fl winPer28"> 商品名称</div>
+            <div class="fl winPer50"> 智付电子支付</div>
+        </li>
+        <li class="clearfix disNone same-list-row disNone">
+            <div class="fl winPer28"> 交易时间</div>
+            <div class="fl winPer50"> 2017-02-03</div>
+        </li>
+        <li class="clearfix disNone same-list-row disNone">
+            <div class="fl winPer28"> 订单编号</div>
+            <div class="fl winPer50"> 123545822564</div>
+        </li>
+        <div class="pos-abs-bot-right uk-up-icon" id="uk-down-box"></div>
+    </ul>  
+    <div class="hei1rem marTop01rem sameFontSize linHeight1rem common-wall fl">
+        <span class="fl">快捷支付</span>
+        <a class="fr blueColor" href="support_bank.html">查看支持银行</a>
+    </div>
+    <div class="fl winPer100">
+        <form action="">
+        <ul class="common-box sameFontSize">
+            <li class="common-row borderBottom">
+                <div class="winPer28 fl">银行卡号</div>
+                <div class="uk_same_input winPer50 fl">
+                    <input type="text" placeholder="只能使用本人银行卡" id="bankCard" />
+                </div>
+                <div class="clear"></div>
+            </li>
+            <li class="common-row borderBottom">
+                <div class="winPer28 fl">省份</div>
+                <a href="choose_province.html" class="fl winPer72">
+                    <div class="uk_same_input winPer70 fl hei1p2rem">
+                        <input type="text" placeholder="开户银行所属省份" disabled/>
+                    </div>
+                    <div class="same-right-icon fr marTop04rem">
+                        <img src="images/into-icon.png" alt="">
+                    </div>
+                    <div class="clear"></div>
+                </a>
+                <div class="clear"></div>
+            </li>
+            <li class="common-row">
+                <div class="winPer28 fl">开户银行</div>
+                <a href="choose_banks.html" class="fl winPer72 clearfix">
+                    <div class="uk_same_input winPer70 fl hei1p2rem">
+                        <input type="text" placeholder="请选择开户银行和卡类型" disabled/>
+                    </div>
+                    <div class="same-right-icon fr marTop04rem">
+                        <img src="images/into-icon.png" alt="">
+                    </div>
+                </a>
+                <div class="clear"></div>
+            </li>
+        </ul>
+        <div class="publicButtonStyle fl sameFontSize">
+            <a href="">
+                <input type="button" value="下一步" id="theNext" disabled>
+            </a>
+        </div>
+    </form>
+    </div>
+</div>
+<div class="maskPopup"></div>
+<div class="errorMessage sameFontSize b-r-4">
+    暂不支持此银行卡
+</div>
+    
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript">
+function isEmpty(elem){
+   var bankCardVal=elem.val().trim();
+     if(bankCardVal.isBlank()){
+        popupDiv($(".maskPopup"));  //最外围的全局遮罩层
+        centerPopup($(".errorMessage")); //中间的弹框居中函数
+        $(".maskPopup").css("display", "block");
+        $(".errorMessage").css("display", "block");
+        $(".errorMessage").text("银行卡号不能为空")
+     }else{
+        $("#theNext").removeAttr("disabled");
+     } 
+}
+function closePopup(){
+    $(".maskPopup").css("display", "none");
+    $(".errorMessage").css("display", "none");
+}
+    $(function() {
+        marTop($(".same-head"));
+        $("#bankCard").blur(function(){
+            isEmpty($("#bankCard"));
+        })
+        $(".maskPopup").click(function(){
+            closePopup()
+        })
+
+        $("#uk-down-box").click(function () {
+            if ($(this).hasClass("uk-down-icon")) {
+              $(".uk-order-list li:gt(0)").slideUp();
+              $(this).removeClass("uk-down-icon").addClass("uk-up-icon");
+            } else {
+              $(".uk-order-list li:gt(0)").slideDown();
+              $(this).removeClass("uk-up-icon").addClass("uk-down-icon");     
+            }
+        })
+    })
+</script>
+</body>
+</html>

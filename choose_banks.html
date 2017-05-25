@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>支付网关-选择银行</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/newrem.js"></script>
+</head>
+<body style="position:relative">
+<div class="same-head clearfix">
+    <div class="same-left">
+        <div class="same-return">
+            <img src="images/back-icon.png" alt="">
+        </div>
+    </div>
+    <div class="same-word">
+        选择银行
+    </div>
+    <div class="same-right-confirm">
+        确定
+    </div>
+</div>
+<div class="uk-supp-bank-top-wall">
+    <ul class="uk-supp-bank-top clearfix">
+        <li class="uk-bank-type type-selected fl">
+            借记卡
+        </li>
+        <li class="uk-bank-type fl">
+            信用卡
+        </li>
+    </ul>
+</div>
+<ul class="uk-supp-bank-cont marTop2point8rem clearfix common-box sameFontSize">
+    <li style="display:block;">
+        <div class="common-row selectedBg">
+                中国银行
+        </div>
+        <div class="common-row">
+                工商银行
+        </div>
+        <div class="common-row">
+                农业银行
+        </div>
+        <div class="common-row">
+                建设银行
+        </div>
+        <div class="common-row">
+                邮政储蓄银行
+        </div>
+        <div class="common-row">
+                中信银行
+        </div>
+        <div class="common-row">
+                光大银行
+        </div>
+        <div class="common-row">
+                华夏银行
+        </div>
+        <div class="common-row">
+                民生银行
+        </div>
+        <div class="common-row">
+                广发银行
+        </div>
+        <div class="common-row">
+                浦发银行
+        </div>
+        <div class="common-row">
+                华夏银行
+        </div>
+        <div class="common-row">
+                民生银行
+        </div>
+        <div class="common-row">
+                广发银行
+        </div>
+    </li>
+
+    <li>
+        <div class="common-row selectedBg">
+                中国银行
+        </div>
+        <div class="common-row">
+                工商银行
+        </div>
+        <div class="common-row">
+                农业银行
+        </div>
+        <div class="common-row">
+                建设银行
+        </div>
+        <div class="common-row">
+                中信银行
+        </div>
+        <div class="common-row">
+                华夏银行
+        </div>
+        <div class="common-row">
+                邮政储蓄银行
+        </div>
+        <div class="common-row">
+                民生银行
+        </div>
+        <div class="common-row">
+                广发银行
+        </div>
+        <div class="common-row">
+                光大银行
+        </div>
+        <div class="common-row">
+                华夏银行
+        </div>
+        <div class="common-row">
+                民生银行
+        </div>
+        <div class="common-row">
+                广发银行
+        </div>
+        <div class="common-row">
+                浦发银行
+        </div>
+    </li>
+</ul>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript">
+$(function(){
+    marTop($(".same-head"));
+    marTop($(".uk-supp-bank-top-wall"));
+    $(".uk-supp-bank-top li").click(function(){
+        var index=$(this).index();
+        if($(this).hasClass("type-selected")){
+            return;
+        }else{
+            $(this).addClass("type-selected").siblings().removeClass("type-selected");
+        }
+        $(".uk-supp-bank-cont li").hide().eq(index).show();
+    });
+    $(".common-row").click(function(){
+        if($(this).hasClass("selectedBg")){
+            return;
+        }else{
+            $(this).addClass("selectedBg").siblings().removeClass("selectedBg");
+        }
+    })
+})
+
+</script>
+</html>

@@ -1,0 +1,65 @@
+.wrap{width:100%; max-width: 768px; margin: 0 auto; padding-top:1.2rem; position: relative; }
+
+.same-head{width:100%;max-width: 768px; margin: 0 auto; padding:0 5.3%; height:1.2rem; background-color: #007fe6; font-size: 0.48rem; line-height: 1.2rem; color:#fff; position: fixed; top:0; left:0; z-index:99;}
+.same-left{width:25%; float: left; height:100%;}
+.same-return{width:0.48rem; height:0.48rem;max-width: 36px; height:0,48rem; float:left; line-height: 0.48rem; margin-top:0.35rem;}
+.same-return>img{width:100%;}
+.same-word{width:50%; float:left; text-align: center;}
+.same-right-confirm{float:left; font-size: 0.48rem; color:#fff; width:25%; text-align: right;}
+
+.uk-order-list{padding:0.2rem 5.3%;width:100%; background: #fff; margin-top:0.26rem;}
+.same-list-row{width:100%; height:0.9rem; background: #fff; line-height: 0.9rem; color:#333;}
+
+#uk-down-box{width:0.37rem; height:0.37rem;}
+.uk-up-icon{background: url(../images/down-icon.png) no-repeat; background-size: auto 0.37rem;}
+.uk-down-icon{background: url(../images/up-icon.png) no-repeat; background-size: auto 0.37rem;}
+
+.common-wall{padding:0 5.3%;width:100%; max-width: 768px; margin:0 auto;}
+.common-box{padding:0.1rem 5.3%;width:100%; background-color: #fff; max-width: 768px; margin:0 auto;}
+.common-row{width:100%; height:1.2rem; line-height: 1.2rem; }
+/*输入框相同的样式*/
+.uk_same_input>input{width:100%; height:90%; border:0;  color:#333;}
+.uk_same_input>input[disabled]{background-color: #fff;}
+.uk_same_input>input::-webkit-input-placeholder { /* WebKit browsers */ color:#999; }
+.uk_same_input>input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:#999; }
+.uk_same_input>input::-moz-placeholder { /* Mozilla Firefox 19+ */color:#999;}
+.uk_same_input>input:-ms-input-placeholder { /* Internet Explorer 10+ */color:#999;}
+
+.same-right-icon{width:0.37rem; max-width: 28px; height:0.37rem; line-height: 0.37rem;}
+.same-right-icon>img{width:100%;}
+.promit-right-icon{width:0.51rem; max-width: 38px; height:0.51rem; line-height: 0.51rem;}
+.promit-right-icon>img{width:100%;}
+
+/*点击下一步按钮*/
+.publicButtonStyle{width: 89.4%; margin-left:5.3%;  height: 1.2rem; margin-top:0.66rem;  text-align: center;  line-height: 1.2rem }
+.publicButtonStyle input{background-color: #007fe6; width: 100%;  height: 100%;  color: #fff;  border: 0;  border-radius: 0.1rem; }
+.publicButtonStyle input[disabled]{ background: #bbbbbb;  }
+/*错误弹出框样式*/
+.maskPopup{background-color: rgba(255,255,255,0.1); position: absolute;  z-index: 111; display: none;}
+.errorMessage{width:6rem; background: rgba(0,0,0,0.7); height:1.5rem; color:#fff; text-align: center; line-height: 1.5rem;position: absolute; z-index: 122; display: none;}
+.maskPopup-promit{background-color: rgba(0,0,0,0.5); position: absolute;  z-index: 111; display: none;}
+.promit-box{width:89.4%; background: #fff; position:absolute; text-align: center; color:#333; display: none; z-index: 122;}
+.promit-box h3{font-size:0.48rem; line-height: 0.9rem;  padding:0.4rem; font-weight: bold;}
+.promit-word1{ border-bottom:1px solid #ddd; padding:0.6rem; padding-top: 0; text-align: left;}
+.promit-confirm{height:1.2rem; line-height: 1.2rem; font-size: 0.42rem; color:#007fe6; text-align: center;}
+.promit-idcard-img{width:5rem; margin:0 auto; }
+.promit-idcard-img>img{width:100%;}
+/*选择银行样式*/
+.uk-supp-bank-top-wall{width:100%; height:1.4rem; max-width: 768px; margin: 0 auto; background-color: #eee; position: fixed; top:1.2rem; left:0; z-index:999;}
+.uk-supp-bank-top{width:100%; background-color: #fff; font-size: 0.4rem; line-height: 1.2rem; float:left; margin-top:0.2rem; }
+.uk-supp-bank-row{width:100%; background-color: #fff; font-size: 0.4rem; line-height: 1.2rem; border-bottom: 1px solid #ddd;}
+.uk-bank-type{ width:50%; box-sizing: border-box; color:#333; height:100%;text-align: center;line-height: 1.2rem;}
+.type-selected{border-bottom:2px solid #007fe6;}
+
+.selectedBg {background: #fff;  background: url(../images/selected-icon.png) no-repeat right center;  background-size: auto 0.42rem; }
+.uk-supp-bank-cont>li>div{border-bottom:1px solid #ddd;}
+.uk-supp-bank-selected>img{width:0.42rem; vertical-align: middle;}
+
+.sendMesBut{text-align: center; border:none; background: #fff; color:#57aff6;}
+.sendMesBut[disabled]{color:#999;}
+
+
+
+
+
+

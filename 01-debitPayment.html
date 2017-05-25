@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>支付网关-借记卡快捷支付</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/newrem.js"></script>
+</head>
+<body style="background-color:#eee; position:relative">
+    <div class="same-head clearfix">
+    <div class="same-left">
+        <div class="same-return">
+            <img src="images/back-icon.png" alt="">
+        </div>
+    </div>
+    <div class="same-word">
+        订单支付
+    </div>
+</div>
+<div class="wrap clearfix">
+    <ul class="uk-order-list fl pos-rel sameFontSize">
+        <li class="clearfix same-list-row">
+            <div class="fl winPer28"> 订单金额</div>
+            <div class="fl winPer50"> 100.00元</div>
+        </li>
+        <li class="clearfix disNone same-list-row disNone">
+            <div class="fl winPer28"> 商品名称</div>
+            <div class="fl winPer50"> 智付电子支付</div>
+        </li>
+        <li class="clearfix disNone same-list-row disNone">
+            <div class="fl winPer28"> 交易时间</div>
+            <div class="fl winPer50"> 2017-02-03</div>
+        </li>
+        <li class="clearfix disNone same-list-row disNone">
+            <div class="fl winPer28"> 订单编号</div>
+            <div class="fl winPer50"> 123545822564</div>
+        </li>
+        <div class="pos-abs-bot-right uk-up-icon" id="uk-down-box"></div>
+    </ul>  
+    <div class="fl winPer100 marTop02rem">
+        <form action="">
+        <ul class="common-box sameFontSize">
+            <li class="common-row borderBottom">
+                <span>中国银行</span>
+                <span class="marTop02rem">借记卡</span>
+                <span class="marTop02rem">** 9867</span>
+            </li>
+            <li class="common-row borderBottom">
+                <div class="winPer28 fl">姓名</div>
+                <div class="uk_same_input winPer65 fl hei1p2rem">
+                    <input type="text" placeholder="本人姓名" />
+                </div>
+                
+                <div class="clear"></div>
+            </li>
+            <li class="common-row">
+                <div class="winPer28 fl">身份证</div>
+                <div class="uk_same_input winPer65 fl hei1p2rem">
+                    <input type="text" placeholder="本人证件号码" />
+                </div>
+                <div class="promit-right-icon fr marTop025rem" id="idCardPromit">
+                    <img src="images/promit-icon.png" alt="">
+                </div>
+                <div class="clear"></div>
+            </li>
+        </ul>
+        <ul class="common-box sameFontSize marTop02rem">
+            
+            <li class="common-row borderBottom">
+                <div class="winPer28 fl">手机号</div>
+                <div class="uk_same_input winPer65 fl hei1p2rem">
+                    <input type="text" placeholder="银行预留手机号" />
+                </div>
+                <div class="promit-right-icon fr marTop025rem" id="phoneNumPromit">
+                    <img src="images/promit-icon.png" alt="">
+                </div>
+                <div class="clear"></div>
+            </li>
+            <li class="common-row">
+                <div class="winPer28 fl">短信验证码</div>
+                <div class="uk_same_input winPer30 fl hei1p2rem">
+                    <input type="text" placeholder="本人证件号码" />
+                </div>
+                <div class="widPer28 fr">
+                    <input type="button" class="sendMesBut" value="免费获取" id="sendMesBut">
+                </div>  
+
+                <div class="clear"></div>
+            </li>
+        </ul>
+        <div class="publicButtonStyle fl sameFontSize">
+            <a href="">
+                <input type="button" value="确认付款" id="theNext" />
+            </a>
+        </div>
+    </form>
+    </div>
+</div>
+<div class="maskPopup-promit"></div>
+<div class="promit-box sameFontSize b-r-4">
+    <div class="promit-word">
+        <h3>手机号说明</h3>
+        <div class="promit-idcard-img">
+            <img src="images/idcard.png" alt="">
+        </div>
+        <div class="promit-word1 sameFontSize marTop025rem">
+            <p>银行预留手机号是您在办理银行卡时填写的手机号。</p>
+            <p class="marTop02rem">没有预留手机号、手机号忘记或停用可联系银行客服处理。</p>
+        </div>
+    </div>
+    <div class="promit-confirm">
+        知道了
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript">
+function closePopup(){
+    $(".maskPopup-promit").css("display", "none");
+    $(".promit-box").css("display", "none");
+}
+$(function(){
+    $("#uk-down-box").click(function () {
+        if ($(this).hasClass("uk-down-icon")) {
+          $(".uk-order-list li:gt(0)").slideUp();
+          $(this).removeClass("uk-down-icon").addClass("uk-up-icon");
+        } else {
+          $(".uk-order-list li:gt(0)").slideDown();
+          $(this).removeClass("uk-up-icon").addClass("uk-down-icon");     
+        }
+    })
+    
+    $("#sendMesBut").on("click",function(){
+        teleCodeTimer($("#sendMesBut"));
+    })
+    $("#idCardPromit").click(function(){
+        popupDiv($(".maskPopup-promit"));  //最外围的全局遮罩层
+        centerPopup($(".promit-box")); //中间的弹框居中函数
+        $(".maskPopup-promit").css("display", "block");
+        $(".promit-box").css("display", "block");
+        $(".promit-word h3").text("证件号码说明");
+        $(".promit-word1").html("您在办理银行卡时所填写的证件号码");
+    })
+    $(".promit-confirm").click(function(){
+        closePopup()
+    })
+
+    $("#phoneNumPromit").click(function(){
+        popupDiv($(".maskPopup-promit"));  //最外围的全局遮罩层
+        centerPopup($(".promit-box")); //中间的弹框居中函数
+        $(".maskPopup-promit").css("display", "block");
+        $(".promit-box").css("display", "block");
+        $(".promit-word h3").text("手机号说明");
+        $(".promit-word1").html("<p>银行预留手机号是您在办理银行卡时填写的手机号。</p><p class='marTop02rem'>没有预留手机号、手机号忘记或停用可联系银行客服处理。</p>");
+
+    })
+        
+})
+
+
+</script>
+</html>

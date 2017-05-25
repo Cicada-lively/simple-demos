@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>支付网关-选择省份</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/code.css">
+</head>
+<body style="background-color:#eee; position:relative">
+    <div class="uk-same-head">
+        <div class="uk-same-left">
+            <div class="uk-same-return">
+                <img src="images/back-icon.png" alt="">
+            </div>
+        </div>
+        <div class="uk-same-word">
+            选择省份
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="uk-supp-same-cont top3point5 ">
+        <div class="common-row selectedBg">
+            <div class="uk-province-name fl same-font-size">
+                北京市
+            </div>
+        </div>
+        <div class="common-row">
+            <div class="uk-province-name fl same-font-size">
+                天津市
+            </div>
+        </div>
+        <div class="common-row">
+            <div class="uk-province-name fl same-font-size">
+                上海市
+            </div>
+        </div>
+        <div class="common-row">
+            <div class="uk-province-name fl same-font-size">
+                河北省
+            </div>
+        </div>
+        <div class="common-row">
+            <div class="uk-province-name fl same-font-size">
+                山西省
+            </div>
+        </div>
+        <div class="common-row">
+            <div class="uk-province-name fl same-font-size">
+                辽宁省
+            </div>
+        </div>
+        <div class="common-row">
+            <div class="uk-province-name fl same-font-size">
+                吉林省
+            </div>
+        </div>
+        <div class="common-row">
+            <div class="uk-province-name fl same-font-size">
+                黑龙江省
+            </div>
+        </div>
+        <div class="common-row">
+            <div class="uk-province-name fl same-font-size">
+                江苏省
+            </div>
+        </div>
+        <div class="common-row">
+            <div class="uk-province-name fl same-font-size">
+                浙江省
+            </div>
+        </div>
+        <div class="common-row">
+            <div class="uk-province-name fl same-font-size">
+                安徽省
+            </div>
+        </div>
+        <div class="common-row">
+            <div class="uk-province-name fl same-font-size">
+                福建省
+            </div>
+        </div>
+        <div class="common-row">
+            <div class="uk-province-name fl same-font-size">
+                江西省
+            </div>
+        </div>
+        <div class="common-row">
+            <div class="uk-province-name fl same-font-size">
+                山东省
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/public2.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".common-row").click(function(){
+            if($(this).hasClass("selectedBg")){
+                return;
+            }else{
+                $(this).addClass("selectedBg").siblings().removeClass("selectedBg");
+            }
+        })
+        largeTop($(".uk-same-head"));
+        largeTop($(".uk-supp-same-cont"));
+    })
+
+</script>
+</html>

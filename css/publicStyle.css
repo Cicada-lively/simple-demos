@@ -1,0 +1,156 @@
+body{ font:0.55rem "Microsoft Yahei","Helvetica Neue",Helvetica,sans-serif; background-color:#f6f5fa;}
+
+/*½â¾öµã»÷input textarea³öÏÖ±ß¿òµÄÎÊÌâ*/
+input:focus, input:active, input:link, input:visited{ outline:none;border:0;}
+input:click{ background-color: #fff;}
+textarea:focus, textarea:active, textarea:link, textarea:visited{ outline:none;border:0;}
+/*½â¾öµã»÷input textarea³öÏÖ±ß¿òµÄÎÊÌâ*/
+
+/*½â¾öiosÆ»¹ûbuttonÔ²½ÇºÍ½¥±äµÄÎÊÌâ*/
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer;  -webkit-appearance: none; }
+/*½â¾öiosÆ»¹ûbuttonÔ²½ÇºÍ½¥±äµÄÎÊÌâ*/
+
+/*½â¾öiosÒÆ¶¯¶Ëµã»÷°´Å¥»á³öÏÖ°µÉ«±³¾°µÄÎÊÌâ*/
+input[type=data]{ background-color:transparent; -moz-appearance:none; -webkit-appearance:none; }
+/*½â¾öiosÒÆ¶¯¶Ëµã»÷°´Å¥»á³öÏÖ°µÉ«±³¾°µÄÎÊÌâ*/
+
+.fl{float:left;}
+.fr{float:right;}
+a{text-decoration:none;}
+.fontBold{font-weight:bold;}
+.color3b{color:#3b3b3b;}
+.color9f{color:#9f9f9f;}
+.lightBlueBg{background:#75d4ad;}
+.textIndent015{text-indent:0.15rem;}
+.textIndent02{text-indent:0.2rem;}
+.pad5Div{padding:0 5%;  width:90%;}
+.marTop05rem{margin-top:0.5rem;}
+.marTop1rem{margin-top:1rem;}
+.marTop1point5rem{margin-top:1.5rem;}
+.marTop1point6rem{margin-top:1.4rem;}
+.marTop2rem{margin-top:2rem;}
+.marTop2point5rem{margin-top:2.5rem;}
+.marTop3rem{margin-top:3rem;}
+.marTop3point5rem{margin-top:3.5rem;}
+.marTop4rem{margin-top:4rem;}
+.marTop5rem{margin-top:5rem;}
+.marTop8rem{margin-top:8rem;}
+.marBot05rem{margin-bottom:0.5rem;}
+.marBot08rem{margin-bottom:0.8rem;}
+.whiteBg{background-color:#fff;}
+.textCenter{text-align:center;}
+.textRight{text-align:right;}
+.textLeft{text-align:left;}
+.height1point0{height:1.0rem;}
+.height1point2{height:1.2rem;}
+.height1point4{height:1.4rem;}
+.height1point5{height:1.5rem;}
+.height1point6{height:1.6rem;}
+.height2point2{height:2.2rem;}
+.height1point7{height:1.7rem;}
+.height1point8{height:1.8rem;line-height:1.8rem;}
+.height3point2{height:3.2rem;}
+.linHei1point4{line-height:1.4rem;}
+.linHei1point6{line-height:1.6rem;}
+.linHei1point7{line-height:1.7rem;}
+.linHei2point2{line-height:2.2rem;}
+
+.borderBottom{border-bottom:1px solid #dcdcdc;}
+.borBot0{border-bottom:0;}
+#borBot0{border-bottom:0;}
+.borTopBot{border-top:1px solid #dcdcdc;border-bottom:1px solid #dcdcdc;}
+.cursorPointer{cursor:pointer;}
+input{font:0.55rem "Microsoft Yahei"; border:0;}
+a p span{color:#424242;}
+
+/*ÍøÒ³ÖÐ°´Å¥µÄÄ¬ÈÏÑÕÉ«±³¾°*/
+#nextStep{background:#75d4ad;}
+/*ÍøÒ³ÖÐ°´Å¥µÄÄ¬ÈÏÑÕÉ«±³¾°*/
+
+/*/!*Í·²¿ header ¹Ø±Õ°´Å¥ºÍÏÂÀ­*!/
+.header{ width:96%; padding:0.2rem 2%; height:1rem; background:#1b1b20; line-height:1rem; color:#fff; }
+.header .comeBack{ width:15%; background:url("../img/comeBackIcon.jpg") no-repeat left center; background-size: auto 75%; height:1rem; cursor:pointer; text-indent:0.8rem; line-height:1rem; }
+.header .middleFont{ width:70%; font-size:0.6rem; line-height:1rem; text-align:center; color:#fff; }
+.header .dropDownIcon{ width:15%; cursor:pointer; background:url("../img/dropdownIcon.jpg") no-repeat center center; background-size: auto 98%; height:1rem; }
+/!*Í·²¿header¹Ø±Õ°´Å¥ºÍÏÂÀ­*!/*/
+
+/*ÍâÎ§ºÚÉ«µ¯³ö¿òºÍÖÐ¼äµ¯³ö¿òÑùÊ½*/
+#popupDiv{ background:rgba(204,204,204,0.5); position:absolute; z-index:1; display:none;}
+#popupDivCenter{ width:10rem;  background:#fff; position:absolute; z-index:999; display:none; text-align:center; border-radius:0.3rem; overflow:hidden;}
+#popupDivCenter p {font-size:0.54rem; letter-spacing:0.01rem;}
+.errorPromptDiv{ width:90%; height:2.4rem; margin:0 5%; line-height:2.4rem;}
+.clickOkClose{ width: 100%; color:#1bb777; border-top:1px solid #ccc; height:1.6rem; line-height:1.4rem; cursor:pointer; }
+/*ÍâÎ§ºÚÉ«µ¯³ö¿òºÍÖÐ¼äµ¯³ö¿òÑùÊ½*/
+
+/*¹«¹²µÄ°´Å¥ÑùÊ½*/
+.publicButtonStyle{ width:90%; padding:0 5%; height:1.5rem; margin-top:1.4rem; margin-bottom:0.6rem; text-align: center; line-height:1.4rem; }
+.publicButtonStyle input{ width:100%; height:1.5rem; color:#fff; border:0; background:#1bbf7c; font:0.6rem "Microsoft Yahei"; border-radius:0.2rem; letter-spacing:0.05rem; }
+/*¹«¹²µÄ°´Å¥ÑùÊ½*/
+
+/*×îºóÒ»ÐÐ ¿Í·þµç»° service telephone*/
+.footer{float:left; width:100%;}
+.serviceTel{width:100%; margin-bottom:0.2rem; height:1rem; line-height:1rem; text-align:center;}
+.serviceTel p{width:50%; margin:0 25%;}
+.serviceTel p span{text-align:center;}
+.serviceTel .telephoneNumber{color:#1bbf7c; }
+/*×îºóÒ»ÐÐ ¿Í·þµç»° service telephone*/
+
+/*ÏàÍ¬µÄ100% div ¹«¹²ÑùÊ½*/
+.wallDiv{margin-top:1.6rem; width:90%; padding: 0 5%; background:#fff;
+    border-top:1px solid #dde1e4; border-bottom:1px solid #dde1e4; letter-spacing:0.02rem; overflow:hidden;}
+.same100Div{width:100%; height:1.7rem; border:0; color:#424242; line-height:1.5rem; /*background:cadetblue;*/ border-bottom:1px solid #dde1e4; overflow:hidden; }
+.same100Div input{width:100%; margin-top:0.3rem;/* background:#eee;*/ border:0; color:#424242; font:0.55rem "Microsoft Yahei"; letter-spacing:0.02rem;}
+.same100Div p{overflow:hidden;}
+.same100Div p input{ width:91%; cursor:pointer; color:#424242; line-height:1.4rem; background:#fff;}
+.same100Div p span{width:90%; height:98%; display:block;}
+.leftFontP{ width:30%; height:1.6rem; color:#ababab;}
+.rightArrowBg{ width:70%; height:1.6rem; background:url("../img/rightArrowIcon.jpg") no-repeat right center; background-size:auto 40%;}
+
+.width70{width:70%;}
+.width70 input{ width:96%; margin-top: 0.3rem; /*background:#eee;*/}
+/*ÏàÍ¬µÄ100% div ¹«¹²ÑùÊ½*/
+
+/*¶þ¼¶Í·²¿À¸ ºÍ Ê¡ÊÐÇøµÄµã»÷Ñ¡ÖÐÌí¼Ó±³¾°µÄÑùÊ½*/
+/*.blueComeback{ width:22%; margin-left:3%; height:1.7rem; background:url("../img/blueComeBackIcon.png") no-repeat left center; background-size: auto 40%; text-indent:0.8rem; line-height:1.65rem; overflow:hidden; }
+.blueComeback a{ text-decoration: none; color:#007aff; font-size:0.6rem;}*/
+.secondHeaderFont{ width:100%;height:1.7rem; font-size:0.6rem; color:#535353; text-align:center; letter-spacing:0.015rem; line-height:1.65rem; background:#fff; }
+.selectedBg{ background:#fff; background:url("../img/selectRightIcon.png") no-repeat right center; background-size: auto 40%;}
+/*¶þ¼¶Í·²¿À¸ ºÍ Ê¡ÊÐÇøµÄµã»÷Ñ¡ÖÐÌí¼Ó±³¾°µÄÑùÊ½*/
+
+/*Ê¡ÏØÊÐ×îÉÏÃæµÄÄ£ºýËÑË÷¿òÑùÊ½*/
+.searchInputWall{ width:94%; padding:0.25rem 3%; background:#c9c9ce; height:1.3rem;}
+.searchInputDiv{ width:100%; height:1.28rem; background:#fff; border-radius:0.2rem; overflow:hidden;}
+.leftInputSearch{ width:85%; height:1.28rem; background:url("../img/searchIcon.jpg") no-repeat left center; background-size:auto 85%; }
+.leftInputSearch input{ margin-left:12%; width:88%; height:1.28rem; font:0.5rem "Microsoft Yahei"; line-height:1.28rem; border:0;}
+.rightCloseIcon{ width:14%; margin-right:1%; height:1.28rem; cursor:pointer; display:none; background:url("../img/inputClearIcon.jpg") no-repeat right center; background-size:auto 90%;}
+/*Ê¡ÏØÊÐ×îÉÏÃæµÄÄ£ºýËÑË÷¿òÑùÊ½*/
+
+/*20X ÉÌ¼Ò¹ÜÀí×éÒ³Ãæ¶¨ÒåµÄÑùÊ½*/
+.fullWidthDiv { width: 100%; letter-spacing: 0.02rem; overflow:hidden;}
+.same90PerDiv{ width:90%; margin-left:5%; margin-right:5%; overflow:hidden;}
+.same90PerDiv input{/*background:#ccc;*/}
+.left28Per{ width:28%; color:#9f9f9f; overflow:hidden;}
+.right72Per{ width:72%; overflow:hidden;}
+.addRightArrow{ background:url("../img/rightArrowIcon3.jpg") no-repeat right center;
+    background-size: auto 35%;}
+.left60Per{ width:60%; overflow:hidden; color:#3b3b3b;}
+.right40Per{ width:32%; margin-right:8%; overflow:hidden; color:#3b3b3b;}
+/*20X ÉÌ¼Ò¹ÜÀí×éÒ³Ãæ¶¨ÒåµÄÑùÊ½*/
+
+/*微信支付的页面样式*/
+.wx_box{ width:100%; }
+/*header{ width:100%; height:1.925rem; }
+.wx_return{ width:0.4375rem; height:0.766rem; float:left;margin-left:0.45rem; margin-top:0.58rem;}
+.wx_return img{ width:0.4375rem; }
+.wx_title{ text-align: center;line-height: 1.925rem; font-size:0.56rem; width:90%;height:1.925rem;}
+*/
+.wx_banner{ width:100%; }
+.wx_banner img{ width: 100%; }
+.wx_anniu{display:block; width:12.03rem; height:1.75rem; background: #1bb777; color:white; font-size: 0.7rem; text-align: center; line-height: 1.75rem; margin: 0 auto; margin-top: 4rem; border-radius: 5px; }
+.wx_loading{ width:3.5rem; height:3.5rem; margin: 0 auto; margin-top: 4.5rem; }
+.wx_loading img{width:100%;}
+.wx_loading_word{width:100%;height:1.5rem; font-size: 0.7rem; color:#424242; text-align: center; line-height: 1.5rem;}
+
+/*Çå³ý¸¡¶¯*/
+.clear{clear:both;}
+/*Çå³ý¸¡¶¯*/

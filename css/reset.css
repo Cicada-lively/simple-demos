@@ -1,0 +1,99 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,input { margin: 0; padding: 0; border: 0; font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, STHeiti, 华文细黑, sans-serif; font-size: 100%; vertical-align: baseline; }
+html { line-height: 1; }
+ol, ul { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+a img { border: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+input{ margin:0; padding:0; border:0; -webkit-appearance:none; /*去除系统默认的样式*/ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);   /* 点击高亮的颜色*/}
+
+body{ font:14px "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, STHeiti, 华文细黑, sans-serif; background-color:#eee;}
+
+input:focus, input:active, input:link, input:visited{ outline:none;border:0;}
+input:click{ background-color: #fff;}
+textarea:focus, textarea:active, textarea:link, textarea:visited{ outline:none;border:0;}
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer;  -webkit-appearance: none; }
+input[type=data]{ background-color:transparent; -moz-appearance:none; -webkit-appearance:none; }
+
+.fl{float:left;}
+.fr{float:right;}
+a{text-decoration:none;}
+
+.clear{display:block;float:none;clear:both;overflow:hidden;visibility:hidden;width:0;height:0;background:none;border:0;font-size:0}
+.clearfix:after { content:""; clear:both; visibility:hidden; display:block; font-size:0; height:0; line-height:0;}
+.clearfix { zoom:1;}
+input:focus, input:active, input:link, input:visited{ outline:none;border:0;}
+input:click{ background-color: #fff;}
+textarea:focus, textarea:active, textarea:link, textarea:visited{ outline:none;border:0;}
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer;  -webkit-appearance: none; }
+input[type=data]{ background-color:transparent; -moz-appearance:none; -webkit-appearance:none; }
+
+.pos-rel{position: relative;}
+.pos-abs{position: absolute;}
+
+.b-r-4{border-radius: 4px;}
+a{text-decoration:none;}
+.fontBold{font-weight:bold;}
+.color66{color:#666;}
+.color99{color:#999;}
+.blueBg{background:#007fe6;}
+.blueColor{color:#007fe6;}
+.marLeft10per{margin-left:10%;}
+.marTop0{margin-top:0!important;}
+.marTop01rem{margin-top:0.1rem;}
+.marTop02rem{margin-top:0.2rem!important;}
+.marTop025rem{margin-top:0.25rem;}
+.marTop04rem{margin-top:0.4rem;}
+.marTop05rem{margin-top:0.5rem;}
+.marTop1rem{margin-top:1rem;}
+.marTop1point5rem{margin-top:1.5rem;}
+.marTop1point6rem{margin-top:1.4rem;}
+.marTop2rem{margin-top:2rem;}
+.marTop2point5rem{margin-top:2.5rem;}
+.marTop2point8rem{margin-top:2.8rem!important;}
+.marTop3rem{margin-top:3rem;}
+.marTop3point5rem{margin-top:3.5rem;}
+.marTop4rem{margin-top:4rem;}
+.marTop5rem{margin-top:5rem;}
+.marTop8rem{margin-top:8rem;}
+.marBot05rem{margin-bottom:0.5rem;}
+.marBot08rem{margin-bottom:0.8rem;}
+.whiteBg{background-color:#fff;}
+.textCenter{text-align:center;}
+.textRight{text-align:right;}
+.textLeft{text-align:left;}
+.hei1rem{height:1rem;}
+.hei1p2rem{height:1.2rem;}
+.linHeight1rem{line-height:1rem;}
+.lineHei1p2rem{line-height:1.2rem;}
+
+.borderBottom{border-bottom:1px solid #ddd;}
+.borBot0{border-bottom:0;}
+.pos-abs-bot-right{position:absolute; bottom:0.5rem; right:0.5rem;}
+
+.disNone{display: none;}
+.disBlock{display: block;}
+.sameFontSize{font-size: 0.4rem;}
+.winPer30{width:30%;}
+.winPer28{width:28%;}
+.winPer20{width:20%;}
+.winPer50{width:50%;}
+.winPer72{width:72%;}
+.winPer70{width:70%;}
+.winPer65{width:65%;}
+.winPer100{width:100%;}
+
